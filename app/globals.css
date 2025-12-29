@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Circe';
+    src: url("/public/fonts/Circe-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Circe';
+    src: url("/public/fonts/Circe-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Circe';
+    src: url("/public/fonts/Circe-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Circe';
+    src: url("/public/fonts/Circe-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Circe';
+    src: url("/public/fonts/Circe-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Circe';
+    src: url("/public/fonts/Circe-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    }
+
+@theme {
+    --color-white: #ffffff;
+    --color-gray-5: #E0E0E0;
+    --color-gray-4: #BDBDBD;
+    --color-green-1: #24CCA7;
+    --color-green-opacity: #E5F1EF;
+    --color-blue: #4A56E2;
+    --color-blue-opacity: #6E78E8;
+    --color-red: #FF6596;
+    --color-gray-bg: #E7EAF2;
+    --color-gray-text: #A6A6A6;
+
+    --font-circe: "Circe", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+}
