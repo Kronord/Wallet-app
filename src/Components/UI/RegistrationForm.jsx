@@ -1,9 +1,9 @@
 'use client'
 import { useForm } from "react-hook-form";
-import WalletIcon from "../../../public/wallet-logo.svg";
-import EmailIco from "../../../public/email-ico.svg";
-import PasswordIco from "../../../public/password-ico.svg";
-import AccountIco from "../../../public/account-ico.svg";
+import WalletIcon from "$/wallet-logo.svg";
+import EmailIco from "$/email-ico.svg";
+import PasswordIco from "$/password-ico.svg";
+import AccountIco from "$/account-ico.svg";
 import Link from "next/link";
 
 function RegistrationForm() {

@@ -1,6 +1,6 @@
-import '@/../app/globals.css';
-import WalletLogo from '@/../public/wallet-logo.svg';
-import ExitIcon from '@/../public/Exit-icon.svg';
+import '#/globals.css';
+import WalletLogo from '$/wallet-logo.svg';
+import ExitIcon from '$/Exit-icon.svg';
 
 function Header() {
   return (
