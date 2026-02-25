@@ -7,6 +7,8 @@ import { BiDollar } from "react-icons/bi";
 
 function Navigation() {    
      const pathname = usePathname()
+     console.log(pathname);
+     
   return (
     <nav className="flex justify-center items-center w-full h-11 mt-2.5">
         <Link href={"/"} className={`${pathname === '/' ? 'bg-blue' : 'bg-blue-opacity'} flex justify-center items-center size-[38px] rounded-xl mr-8`}>

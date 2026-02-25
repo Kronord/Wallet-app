@@ -5,16 +5,24 @@ import EmailIco from "$/email-ico.svg";
 import PasswordIco from "$/password-ico.svg";
 import AccountIco from "$/account-ico.svg";
 import Link from "next/link";
+import { useDispatch } from "react-redux";
+import * as authOperations from "%/auth/auth-operations";
 
 function RegistrationForm() {
+  const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
+    reset,
     watch,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = ({ email, username, password }) => {
+      dispatch(authOperations.register({ email, username, password }));
+      reset();
+  }
+
   return (
     <div className="flex flex-col justify-center items-center py-9 px-5 w-80">
       <WalletIcon />
@@ -61,7 +69,7 @@ function RegistrationForm() {
           />
           <input
             type="text"
-            {...register("name")}
+            {...register("username")}
             className="border-b-[1px] border-gray-5 mb-10 text-gray-4 p-2.5 pl-11"
             placeholder="Ваше ім'я"
           />

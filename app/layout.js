@@ -1,4 +1,4 @@
-import LayoutWrapper from "@/Components/Utils/LayoutWrapper";
+import StoreProvider from "./StoreProvider";
 import "./globals.css";
 
 export const viewport = {
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <LayoutWrapper>{children}</LayoutWrapper>     
+        <StoreProvider>{children}</StoreProvider>
       </body>
     </html>
   );
